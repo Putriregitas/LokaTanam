@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Daftar Akun</title>
+    <style>
+        body{
+            margin: 0 auto;
+            padding: 0 auto; 
+            background: url("background.png");
+            border-image: none;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #inputan{
+            width: 88%;
+            height: 30px;
+        }
+
+        #input{
+            width: 88%;
+            height: 30px;
+        }
+
+
+        .inboxdaftar{
+            width: 40%;
+            padding-bottom: 0% auto ;
+            margin-top: 15%;
+            margin-left: 28%;
+            padding: 0 auto;
+            text-align: center;
+            background: rgba(182, 181, 181, 0.568);
+            color: black;
+            box-sizing: border-box;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        .inboxdaftar input{
+            border: #707070;
+            outline:none;
+            background-color: #B3BBA0;
+            width: 217px;
+            height: 30px;
+            border-radius: 8px;
+            border: 1px solid #707070;
+            color: white;
+
+        }
+
+        ::placeholder{
+            color: white;
+        }
+
+        .inboxdaftar input[type="submit"]
+        {
+            border: #707070;
+            outline: none;
+            height: 30px;
+            width: 300px;
+            margin-top: 3%;
+            border-radius: 8px;
+            background-color: #B3BBA0;
+            font-size: 15px;
+            font-family: 'Segoe UI';
+            cursor: pointer;
+        }
+
+        .inboxdaftar input[type="submit"]:hover
+        {
+            cursor: pointer;
+            background-color:#6D7659;
+            color:#3E4D19;
+        }
+
+        .garis::before{
+            position: absolute;
+            content: '';
+            width: 60px;
+            height: 1px;
+            background-color: #CFCFCF;
+            margin-top: -1.8%;
+            margin-left: 5%;
+        }
+
+        .garis::after{
+            position: absolute;
+            content: '';
+            width: 60px;
+            height: 1px;
+            background-color: #CFCFCF;
+            margin-top: -1.8%;
+            margin-left: -9.6%;
+        }
+
+        .inboxdaftar p{
+            text-decoration: none;
+            font-size: 12px;
+            line-height: 20px;
+            color: white;
+            margin-top: -2%;
+            font-family: 'Segoe UI';
+        }
+
+    
+        .inboxdaftar h1{
+            position:absolute;
+            left: 4%;
+            top: 2%;
+        }
+
+        .eye{
+            position: absolute;
+            text-align: right;
+            margin-top: 0.7%;
+            margin-left: -2.5%;
+            cursor: pointer;
+        }
+
+        #hide1{
+            display: none;
+        }
+
+        .sosmed {
+            text-align: center;
+            padding-bottom:5% ;
+        }
+
+        .sosmed a{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #B3BBA0;
+            line-height: 50px;
+            margin: 5px;
+            border: 1px solid #707070 ;
+        }
+
+        .sosmed a:hover{
+            background-color:#6D7659;
+        } 
+
+    </style>
+
+</head>
+<body>
+    <div class="inboxdaftar">
+        <h1> <img src="Logo2.png" alt=""> </h1>
+        <h2> <img src="logo.png" alt="" width="50%"></h2>
+        <form>
+            <input type="text" placeholder="Nama Depan"  required="">
+            <input type="text" placeholder="Nama Belakang" required="">
+            <br><br>
+            <input type="text" id="inputan" class="email" placeholder="Email" required="">
+            <br><br>
+            <input type="password" id="input" placeholder="Kata Sandi" required="">
+            <span class="eye" onclick="Functionku()">
+                <i id="hide1" class="fa fa-eye" > <img src="eye.png" alt="" width="20px"> </i>
+                <i id="hide2" class="fa fa-eye-slash"> <img src="eyeslash.png" alt="" width="20px"> </i>
+            </span>
+            <br><br>
+            <input type="submit" value="Daftar">  </input>
+            <br><br>
+            <p>Atau daftar dengan</p>
+            <span class="garis"></span>
+        </form>
+
+        <div class="sosmed">
+            <a href="#"> <img src="google.png" alt=""></a>
+            <a href="#"> <img src="fb.png" alt=""></a>
+            <a href="#"> <img src="in.png" alt=""></a>
+            <a href="#"> <img src="twt.png" alt=""></a>
+        </div>
+        
+    </div>
+    
+    <script>
+        function Functionku(){
+            var x = document.getElementById("input");
+            var y = document.getElementById("hide1");
+            var z = document.getElementById("hide2");
+
+            if(x.type === 'password'){
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+            else{
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+
+        }
+    </script>
+        
+
+</body>
+</html>
