@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
         body{
             margin: 0 auto;
             padding: 0 auto; 
@@ -13,19 +15,6 @@
             background-size: cover;
         }
 
-        .menu ul{
-            list-style-type: none;
-            margin: none;
-            padding: none;
-            overflow:hidden
-        }
-        
-        .menu li{
-            float: right;
-            text-align: center;
-            padding: 2%;
-            text-decoration: none;
-        }
 
         .menu h1{
             position:absolute;
@@ -35,24 +24,129 @@
 
         .menu h2{
             position: absolute;
+            margin-top: 15%;
+            margin-left: 34%;
         }
 
+        .menu h3{
+            position: absolute;
+            margin-top: 30%;
+            margin-left: 31%;
+            font-family: 'Gill Sans MT';
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            font-weight: 100;
+        }
 
+        .menu h4{
+            position: absolute;
+            margin-top: 32%;
+            margin-left: 32%;
+            font-family: 'Gill Sans MT';
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            font-weight: 100;
+
+        }
+
+        nav ul{
+            list-style: none;
+        }
+
+        nav ul li a{
+            float: right;
+            text-decoration: none;
+            color:white;
+            padding: 0px 40px;
+            text-align: center;
+            line-height: 40px;
+            height: 40px;
+            margin-top: 1%;
+            font-family: 'montserrat', sans-serif;            
+        }
+
+        .garis{
+            position: absolute;
+            content: '';
+            width: 87px;
+            height: 2px;
+            background-color: #698238;
+            margin-left: 41.5%;
+            margin-top: 4%;
+        }
+
+        #masuk
+        {
+            border: #707070;
+            outline: none;
+            height: 35px;
+            width: 120px;
+            margin-top: 33%;
+            margin-left: 38%;
+            border-radius: 8px;
+            background-color: #698238;
+            font-size: 15px;
+            font-family: 'Segoe UI';
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+        }
+
+        #daftar
+        {
+            border: #707070;
+            outline: none;
+            height: 35px;
+            width: 120px;
+            margin-top: 33%;
+            margin-left: 3%;
+            border-radius: 8px;
+            background-color: #698238;
+            font-size: 15px;
+            font-family: 'Segoe UI';
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+        }
+
+        #masuk:hover{
+            cursor: pointer;
+            background-color: rgb(47, 70, 17);
+        }
+
+        #daftar:hover{
+            cursor: pointer;
+            background-color: rgb(47, 70, 17);
+        }
+
+        #home{
+            color: #698238;
+        }
     </style>
 </head>
 <body>
     <div class="menu">
-        <ul>
-            <li><a href="BERANDA">BERANDA</a></li>
-            <li><a href="PREDIKSI">PREDIKSI</a></li>
-            <li><a href="JADWAL">JADWAL</a></li>
-            <li><a href="BLOG">BLOG</a></li>
-            <li><a href="PROFIL">PROFIL</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="PROFIL">PROFIL</a></li>
+                <li><a href="BLOG">BLOG</a></li>
+                <li><a href="JADWAL">JADWAL</a></li>
+                <li><a href="PREDIKSI">PREDIKSI</a></li>
+                <li><a href="BERANDA" id="home">BERANDA</a></li>
+                <span class="garis"></span>
+            </ul> 
+        </nav>
         <h1> <img src="b.png"></h1>
-        <h2> <img src="a.png" width="90%"></h2>
-
-
+        <h2> <img src="a.png" width="130%"></h2>
+        <h3><i>WEBSITE PERTANIAN YANG ANDA BUTUHKAN</i></h3>
+        <h4><i>UNTUK MENUNJANG KEGIATAN PERTANIAN</i></h4>
+        <br><br>
+        <span class="tombol">
+            <input type="submit" value="MASUK" id="masuk"> </input>
+            <input type="submit" value="DAFTAR" id="daftar"> </input>
+        </span>
     </div>
     
 </body>
