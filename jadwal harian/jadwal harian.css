@@ -4,7 +4,7 @@ html,body{
 }
 
 .body{
-    background-color: rgb(122, 153, 125);
+    background-color: #8C9A7E;
 }
 .atas ul{
     height: 40px;
@@ -15,7 +15,7 @@ html,body{
 
 .bawah ul{
     height: 40px;
-    background-color:rgb(85, 114, 85);
+    background-color:#446047;
     margin-top: 0px;
 }
 
@@ -52,7 +52,7 @@ nav ul li a{
 .kotak{
     height: 576.5px;
     width: 650px;
-    background-color: rgb(164, 201, 166);
+    background-color: #B0C8A5;
     margin-top: -1.8%;
 }
 
@@ -107,4 +107,11 @@ nav ul li a{
     margin-top: 10px;
     outline-style: none;
     border-radius: 10px;
+}
+
+.kotak input[type="date"]{
+    background-color: #446047;
+    border-radius: 8px;
+    border: none;
+    color: white;
 }
