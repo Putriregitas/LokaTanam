@@ -1,0 +1,110 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background-color: rgb(122, 153, 125);
+}
+.atas ul{
+    height: 40px;
+    background-color: white;
+    padding-top: 0px;
+    margin: 0px;
+}
+
+.bawah ul{
+    height: 40px;
+    background-color:rgb(85, 114, 85);
+    margin-top: 0px;
+}
+
+.bawah ul li a{
+    color: white;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li a{
+    float: right;
+    text-decoration: none;
+    color: grey;
+    padding: 0px 45px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    
+}
+
+.pertanian{
+    position: absolute;
+    cursor: pointer;
+    margin-top: -40px;
+    margin-left: 50px;
+}
+
+.box{
+    display: flexbox;
+}
+
+.kotak{
+    height: 576.5px;
+    width: 650px;
+    background-color: rgb(164, 201, 166);
+    margin-top: -1.8%;
+}
+
+.tulisan{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tulisan1{
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.tulisan2{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.tabel{
+    padding-bottom: 20px;
+}
+
+
+.tanggal{
+    background-color: beige;
+    height: 20px;
+    width: 140px ;
+    margin-bottom: 20px;
+    border-color: white;
+}
+
+.bagian2{
+    width: 500px;
+    height: 64px;   
+    border-color: white;
+    margin-bottom: 15px;
+}
+.bagian2:focus{
+    border-color: rgb(255, 209, 150);
+    outline-style: none;
+}
+
+
+.tabel{
+    margin-left: 70px;
+}
+
+.simpan{
+    width: 85px;
+    height: 30px;   
+    border-color: white;
+    margin-top: 10px;
+    outline-style: none;
+    border-radius: 10px;
+}
