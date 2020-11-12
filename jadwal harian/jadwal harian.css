@@ -3,9 +3,7 @@ html,body{
     padding: 0;
 }
 
-.body{
-    background-color: #8C9A7E;
-}
+
 .atas ul{
     height: 40px;
     background-color: white;
@@ -45,15 +43,15 @@ nav ul li a{
     margin-left: 50px;
 }
 
-.box{
-    display: flexbox;
+.kotak12{
+    display: flex;
 }
 
 .kotak{
-    height: 576.5px;
-    width: 650px;
+    height: cover auto;
+    width: 50%;
+    margin-top: -1.2%;
     background-color: #B0C8A5;
-    margin-top: -1.8%;
 }
 
 .tulisan{
@@ -114,4 +112,24 @@ nav ul li a{
     border-radius: 8px;
     border: none;
     color: white;
+}
+
+.kotak2{
+    height: cover auto;
+    width: 50%;
+    background-color: #8C9A7E;
+    margin-top: -1.2%;
+}
+
+.cari{
+    height: 35px ;
+    width: 440px;
+    border-radius: 20px;
+    border-color: white;
+}
+
+.cari:focus{
+    border-color: wheat;
+    border-radius: 20px;
+    outline-style: none;
 }
