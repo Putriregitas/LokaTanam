@@ -126,10 +126,48 @@ nav ul li a{
     width: 440px;
     border-radius: 20px;
     border-color: white;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
+
 
 .cari:focus{
     border-color: wheat;
     border-radius: 20px;
     outline-style: none;
+}
+
+.bulan{
+    font-size: 20px;
+}
+.button1{
+    border: none;
+    outline-style: none;
+    background-color: rgb(223, 221, 221);
+}
+
+.simbol{
+    border: none;
+    outline-style: none;
+    background-color: rgb(235, 235, 235);
+}
+
+th input[type="button"]:hover{
+    cursor: pointer;
+    background-color:gray;
+    height: 100%;
+    width: 100%;
+}
+
+.grey1{
+    background-color: rgb(223, 221, 221);
+}
+
+.grey2{
+    background-color:rgb(231, 229, 229) ;
+}
+
+.white{
+    background-color: rgb(235, 235, 235);
+    
 }
