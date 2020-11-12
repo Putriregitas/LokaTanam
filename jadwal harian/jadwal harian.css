@@ -84,12 +84,12 @@ nav ul li a{
 
 .bagian2{
     width: 500px;
-    height: 64px;   
+    height: 75px;   
     border-color: white;
     margin-bottom: 15px;
 }
 .bagian2:focus{
-    border-color: rgb(255, 209, 150);
+    border-color: rgb(204, 204, 204);
     outline-style: none;
 }
 
@@ -132,9 +132,17 @@ nav ul li a{
 
 
 .cari:focus{
-    border-color: wheat;
+    border-color: rgb(199, 195, 188);
     border-radius: 20px;
     outline-style: none;
+}
+
+.gambarcari{
+    margin-left: 44px;
+    margin-top: -77px;
+    position: absolute;
+    cursor: pointer;
+    text-align: right;
 }
 
 .bulan{
