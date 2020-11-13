@@ -1,0 +1,114 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.atas ul{
+    height: 40px;
+    background-color: white;
+    padding-top: 0px;
+    margin: 0px;
+}
+
+.bawah ul{
+    height: 40px;
+    background-color:#ffffff;
+    margin-top: 0px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.bawah ul li a{
+    color: rgb(0, 0, 0);
+    padding-right: 50px;
+}
+
+.iklim{
+    margin-right:180px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li a{
+    float: right;
+    text-decoration: none;
+    color: grey;
+    padding: 0px 45px;
+    text-align: center;
+    line-height: 40px;   
+}
+
+.pertanian{
+    position: absolute;
+    cursor: pointer;
+    margin-top: -40px;
+    margin-left: 50px;
+}
+
+.kotak{
+    background-image: url("pemandangan.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    margin-top: -16px;
+}
+
+.kotak input[type="date"]{
+    border-radius: 15px;
+    border: none;
+    color: gray;
+    margin-left: 1120px;
+    margin-top: 40px;
+    height:  30px;
+    width: 180px;
+    outline-style: none;
+}
+
+.kotak input[type="search"]{
+    border-radius: 15px;
+    border: none;
+    color: gray;
+    margin-left: 1120px;
+    height:  30px;
+    width: 180px;
+    margin-top: 20px;
+    outline-style: none;
+}
+
+.gambarcari{
+    margin-left: 652px;
+    margin-top: -76px;
+    position: absolute;
+    cursor: pointer;
+    text-align: right;
+}
+
+h2{
+    font-size: 40px;
+    color: rgb(50, 51, 50);
+    margin-top: -90px;
+}
+
+.tulisan{
+    margin-top: -20px;
+}
+
+.kotak2{
+    width: 60%;
+    height: 500px;
+    background:rgba(177, 185, 169, 0.781);
+    margin-top: 100px;
+    border-radius: 20px;
+}
+
+.grafik{
+    margin-top: 50px;
+    margin-left: -350px;
+    position: absolute;
+    cursor: pointer;
+    text-align: right;
+}
