@@ -258,46 +258,72 @@
             margin-top: -35%;
         }
 
-        .kotak h2{
-            margin-left: 26%;
-            margin-top: -14%;
+        .kotak{
+            margin-top: -30%;
+            margin-left: 30%;
         }
 
-        .kotak h3{
-            margin-top: -8%;
-            margin-left: 36%;
-            font-family: 'montserrat', sans-serif;
-            font-weight: bold;
+        .kotak2{
+            margin-top: -17%;
+            margin-left: 60%;
+            height: 50%;
         }
 
-        .kotak h4{
-            margin-top: 1%;
-            margin-left: 34.5%;
-            width: 13%;
-            text-align: center;
-            font-family: 'montserrat', sans-serif;
+        .navigation{
+            position: absolute;
+            margin-top: 8%;
+            margin-left: 60%;
+            transform:translateX(-50%);
+            display: flex;
         }
 
-        .kotak input[type="button"]
+        .bar{
+            border: 2px solid rgb(139, 202, 97);
+            cursor: pointer;
+            transition: 0.5s;
+            width: 15px;
+            height: 5px;
+            margin: 6px;
+        }
+
+        #now{
+            border: 2px solid rgb(139, 202, 97);
+            cursor: pointer;
+            transition: 0.5s;
+            width: 15px;
+            height: 5px;
+            margin: 6px;
+            background-color: rgb(87, 124, 31);
+        }
+
+        .bar:hover{
+            background-color: rgb(87, 124, 31);
+        }
+
+        .button3 input[type="button"]
         {
             border: #707070;
             outline: none;
             height: 30px;
-            width: 180px;
-            margin-top: 2%;
-            margin-left: 30%;
+            width: 150px;
+            margin-left: 40%;
             border-radius: 8px;
-            background-color: #90CA7E;
+            background-color: #698238;
             font-size: 13px;
             font-family: 'Segoe UI';
             cursor: pointer;
-            color:black;
+            color: white;
             font-weight: bold; 
         }
 
-        .kotak input[type="button"]:hover{
+        #buttonlain[type="button"]{
+            margin-top: 1%;
+            margin-left: 68%;
+        }
+
+        .button3 input[type="button"]:hover{
             cursor: pointer;
-            background-color: rgb(104, 150, 44);
+            background-color: rgb(47, 70, 17);
         }
 
     </style>
@@ -367,11 +393,20 @@
         <h1> <img src="page3.png"></h1>
     </div>
     <div class="kotak">
-        <h1> <img src="kotak.png" width="300px"></h1>
-        <h2> <img src="org1.png" width="100px"></h2>
-        <h3>SANDI OCTA</h3>
-        <h4>"Kisah Sukses sang Petani Milenial Beromzet Miliaran"</h4>
+        <img src="kotak.png" id="kotak1">
+    </div>
+    <div class="kotak2">
+        <img src="kotak2.png" id="kotak2">
+    </div>
+    <div class="navigation">
+        <label for="" class="bar" id="now"></label>
+        <label for="" class="bar"></label>
+        <label for="" class="bar"></label>
+        <label for="" class="bar"></label>
+    </div>
+    <div class="button3">
         <input type="button" value="Baca Selengkapnya"> </input>
+        <input type="button" value="Baca Selengkapnya" id="buttonlain"> </input>
     </div>
 </section>
     

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=News+Cycle:wght@400;700&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #page1{
+            background: url("bg.png");
+            border-image: none;
+            background-size: cover;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.226);
+        }
+
+
+        .menuatas h1{
+            position:absolute;
+            left: 4%;
+            top: 2%;
+        }
+
+        .menuatas h2{
+            position: absolute;
+            margin-top: 15%;
+            margin-left: 34%;
+        }
+
+        .menuatas h3{
+            position: absolute;
+            margin-top: 30%;
+            margin-left: 31%;
+            font-family: 'News Cycle', sans-serif;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            font-weight: 100;
+        }
+
+        .menuatas h4{
+            position: absolute;
+            margin-top: 32%;
+            margin-left: 32%;
+            font-family: 'Gill Sans MT';
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            font-weight: 100;
+
+        }
+
+        .menuatas{
+            background-color: white;
+            height: 40px;
+            margin-top: 1%;
+        }
+
+        nav ul{
+            list-style: none;
+        }
+
+        nav ul li a{
+            float: right;
+            text-decoration: none;
+            color:#9DA094;
+            padding: 0px 40px;
+            text-align: center;
+            line-height: 8px;
+            margin-top: 1%;
+            font-family: 'montserrat', sans-serif;  
+            font-size: 15px;   
+            font-weight: bold;     
+        }
+
+        .menubawah{
+            background-color: white;
+            margin-top: 0;
+            height: 30px;
+            border-top: 1.5px solid rgb(179, 176, 176);
+        }
+
+        .menubawah h3{
+            font-size: 40px;
+            color: white;
+            margin-top: 10%;
+            width: 50%;
+            margin-left: 8%;
+            font-family: 'News cycle', sans-serif;
+            line-height: 50px;
+        }
+
+        .menubawah h4{
+            font-size: 20px;
+            color: white;
+            margin-top: 1%;
+            font-family: 'News cycle', sans-serif;
+            margin-left: 8%;
+            font-weight: normal;
+            width: 40%;
+            
+        }
+
+        nav input[type="text"]{
+            border-radius: 12px;
+            height: 20px;
+            width: 350px;
+            border: 1.5px solid rgb(179, 176, 176);
+            margin-top: 0.3%;
+            margin-left: 30%;
+            outline: none;
+            padding-left: 3%;
+        }
+
+        .loupe{
+            margin-top: -1.5%;
+            margin-left: 31%;
+        }
+
+        ::placeholder{
+            padding-left: 1%;
+            font-family: 'Segoe UI';
+        }
+
+        .kotakatas{
+            position: absolute;
+            width: 90%;
+            height: 18%;
+            background: white;
+            margin-top: 44%;
+            margin-left: 5%;
+        }
+
+        .page2{
+            background: #516528;
+            height: 300vh;
+        }
+
+        .bigkotak{
+            background:white;
+            width: 90%;
+            height: 100%;
+            margin-left: 5%;
+        }
+
+        .blog1{
+            background: green;
+            height: 10%;
+            width: 5%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+<section id="page1">
+    <div class="menuatas">
+        <nav>
+            <h1> <img src="b.png"></h1>
+            <ul>
+                <li><a href="PROFIL">Profil</a></li>
+                <li><a href="BLOG">Blog</a></li>
+                <li><a href="JADWAL">Jadwal</a></li>
+                <li><a href="PREDIKSI">Prediksi</a></li>
+                <li><a href="BERANDA" id="home">Beranda</a></li>
+                <span class="garis"></span>
+            </ul> 
+    </div>
+    <div class="menubawah">
+        <nav>
+            <ul>
+                <li><a href="Filter">Filter</a></li>
+            </ul>
+            <div class="searchbutton"></div>
+            <input type="text" placeholder="Cari">
+        </nav>
+        <div class="loupe">
+            <img src="loupe.png" height="15px">
+        </div>
+        <h3>Dapatkan Informasi dan Pengalaman terbaik dari para petani di Indonesia</h3>
+        <h4>Temukan blog berdasarkan filter yang tersedia atau cari dengan ketikan judul blog yang ingin Anda baca</h4>
+    </div>
+</section>  
+
+<section class="page2">
+    <div class="bigkotak">
+        <h1>Kunjungi Blog Kami</h1>
+        <h2>Kunjungi Blog Kami</h2>
+        <h3>Kunjungi Blog Kami</h3>
+        </div>
+        <div class="blog1"></div>
+    </div>
+    
+</section>
+</body>
+</html>
