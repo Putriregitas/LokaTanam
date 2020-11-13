@@ -1,0 +1,155 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.atas ul{
+    height: 40px;
+    background-color: white;
+    padding-top: 0px;
+    margin: 0px;
+}
+
+.bawah ul{
+    height: 40px;
+    background-color:#446047;
+    margin-top: 0px;
+}
+
+.bawah ul li a{
+    color: white;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li a{
+    float: right;
+    text-decoration: none;
+    color: grey;
+    padding: 0px 45px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    
+}
+
+.pertanian{
+    position: absolute;
+    cursor: pointer;
+    margin-top: -40px;
+    margin-left: 50px;
+}
+
+.kotak12{
+    display: flex;
+}
+
+.kotak{
+    height: cover auto;
+    width: 50%;
+    margin-top: -1.2%;
+    background-color: #B0C8A5;
+}
+
+.tulisan{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tulisan1{
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.bagian2:focus{
+    border-color: rgb(204, 204, 204);
+    outline-style: none;
+}
+
+.daftarkegiatan{
+    margin-top: 6%;
+}
+
+.tabel{
+    border: 0.0000002px solid black;
+    background-color: white;
+    border-collapse: 0.0005 px collapse;
+}
+
+.tabel2{
+    border: none;
+    background-color: white;
+}
+
+.daftar th{
+    border: 0.0000002px solid black;
+}
+
+.kotak2{
+    height: cover auto;
+    width: 50%;
+    background-color: #8C9A7E;
+    margin-top: -1.2%;
+}
+
+.cari{
+    height: 35px ;
+    width: 440px;
+    border-radius: 20px;
+    border-color: white;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+.cari:focus{
+    border-color: rgb(199, 195, 188);
+    border-radius: 20px;
+    outline-style: none;
+}
+
+.gambarcari{
+    margin-left: 44px;
+    margin-top: -77px;
+    position: absolute;
+    cursor: pointer;
+    text-align: right;
+}
+
+.bulan{
+    font-size: 20px;
+}
+.button1{
+    border: none;
+    outline-style: none;
+    background-color: rgb(223, 221, 221);
+}
+
+.simbol{
+    border: none;
+    outline-style: none;
+    background-color: rgb(235, 235, 235);
+}
+
+th input[type="button"]:hover{
+    cursor: pointer;
+    background-color:gray;
+    height: 100%;
+    width: 100%;
+}
+
+.grey1{
+    background-color: rgb(223, 221, 221);
+}
+
+.grey2{
+    background-color:rgb(231, 229, 229) ;
+}
+
+.white{
+    background-color: rgb(235, 235, 235);
+    
+}
