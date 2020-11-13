@@ -74,9 +74,9 @@ nav ul li a{
 }
 
 .tabel{
-    border: 0.0000002px solid black;
+    border: 0.5px solid black;
     background-color: white;
-    border-collapse: 0.0005 px collapse;
+    border-collapse: 0.5 px collapse;
 }
 
 .tabel2{
