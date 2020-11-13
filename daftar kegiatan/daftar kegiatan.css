@@ -84,9 +84,6 @@ nav ul li a{
     background-color: white;
 }
 
-.daftar th{
-    border: 0.0000002px solid black;
-}
 
 .kotak2{
     height: cover auto;
@@ -112,7 +109,7 @@ nav ul li a{
 }
 
 .gambarcari{
-    margin-left: 44px;
+    margin-left: -360px;
     margin-top: -77px;
     position: absolute;
     cursor: pointer;
