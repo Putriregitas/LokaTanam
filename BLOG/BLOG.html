@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=News+Cycle:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
 
         *{
             margin: 0;
@@ -79,11 +81,38 @@
             font-weight: bold;     
         }
 
+        #home{
+            color: #8BAA30;
+        }
+
+        .garis{
+            position: absolute;
+            width: 68px;
+            height: 2px;
+            background-color: #8BAA30;
+            margin-left: 51%;
+            margin-top: 3.1%;
+        }
+
         .menubawah{
             background-color: white;
             margin-top: 0;
             height: 30px;
             border-top: 1.5px solid rgb(179, 176, 176);
+        }
+
+        .menubawah nav ul li a{
+            color: black;
+            font-size: 12px;
+        }
+
+        .gariskedua{
+            position: absolute;
+            width: 64px;
+            height: 2px;
+            background-color: black;
+            margin-left: 64.5%;
+            margin-top: 2.3%;
         }
 
         .menubawah h3{
@@ -128,33 +157,333 @@
             font-family: 'Segoe UI';
         }
 
-        .kotakatas{
-            position: absolute;
-            width: 90%;
-            height: 18%;
-            background: white;
-            margin-top: 44%;
-            margin-left: 5%;
-        }
-
         .page2{
             background: #516528;
-            height: 300vh;
+            height: 350vh;
         }
 
         .bigkotak{
             background:white;
             width: 90%;
-            height: 100%;
+            height: 90%;
             margin-left: 5%;
         }
 
-        .blog1{
-            background: green;
-            height: 10%;
-            width: 5%;
-            border-radius: 8px;
+        .bigkotak ul{
+            height: 30px;
+            list-style-type: none; 
+            font-family: 'News Cycle', sans-serif; 
+            font-size: 15px;
         }
+
+        .bigkotak ul li{
+            float: left;
+            margin-top: 2%;
+            padding-left: 10%;       
+        }
+
+        #kunjungikedua{
+            padding-left: 25.5%;
+        }
+
+        #kunjungiketiga{
+            padding-left: 25%;
+        }
+
+        .garisblog1{
+            position: absolute;
+            width: 47px;
+            height: 3.5px;
+            background-color: black;
+            margin-left: -69.5%;
+            margin-top: 4%;
+        }
+
+        .garisblog2{
+            position: absolute;
+            width: 47px;
+            height: 3.5px;
+            background-color: black;
+            margin-top: 4%;
+            margin-left: -37%;
+        }
+
+        .garisblog3{
+            position: absolute;
+            width: 47px;
+            height: 3.5px;
+            background-color: black;
+            margin-left: -6%;
+            margin-top: 4%;
+        }
+
+        .text{
+            margin-top: 15%;
+        }
+
+        .text h1{
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 15px;
+            color: white;
+            text-align: center;
+            margin-left: 2%;
+            font-weight: normal;
+        }
+
+        .text h2{
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 14px;
+            color: white;
+            text-align: center;
+            margin-left: 2%;
+            font-weight: bold;
+        }
+
+        .text h3{
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 9px;
+            font-weight: normal;
+            color: white;
+            width: 98%;
+            text-align: center;
+            margin-left: 1%;
+        }
+
+        .button input[type="button"]{
+            background-color: #838B39 ;
+            border-radius: 8px;
+            width: 60%;
+            margin-top: 12%;
+            border: none;
+            color: white;
+            padding: 3%;
+            margin-left: 22%;
+        }
+
+        .button input[type="button"]:hover{
+            background-color: rgb(85, 119, 30);
+        }
+
+        .page2 .isiblog1{
+            display: flex;
+            flex-direction: row;
+            margin-left: 5%;
+            margin-top: -145%;
+        }
+
+        .page2 .isiblog1 .box{
+            background-color: #516528;
+            border-radius: 20px;
+            width: 22%;
+            height: 380px;
+            margin-left: 4%;
+            margin-right: 9%;
+        }
+
+        .page2 .isiblog1 .box .image{
+            position: relative;
+            width: 100%;
+            height: 150px;
+        }
+
+        .page2 .isiblog1 .box .image img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .page2 .isiblog1 .box .image .orang img{
+            margin-top: 40%;
+            margin-left: 34%;
+            width: 37%;
+            height: 58%;
+        }
+
+        .page2 .isiblog2{
+            display: flex;
+            flex-direction: row;
+            margin-left: 5%;
+            margin-top: 5%;
+        }
+
+        .page2 .isiblog2 .box{
+            background-color: #516528;
+            border-radius: 20px;
+            width: 22%;
+            height: 380px;
+            margin-left: 4%;
+            margin-right: 9%;
+        }
+
+        .page2 .isiblog2 .box .image{
+            position: relative;
+            width: 100%;
+            height: 150px;
+        }
+
+        .page2 .isiblog2 .box .image img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .page2 .isiblog2 .box .image .orang img{
+            margin-top: 40%;
+            margin-left: 34%;
+            width: 37%;
+            height: 58%;
+        }
+
+        .bagianbawah{
+            display: flex;
+            margin-top: 50%;
+        }
+
+        .bagianbawah .kiri img{
+            float: left;
+            width: 14%;
+            margin-left: -655%;
+            margin-top: 5%;
+            cursor: pointer;
+        }
+
+        .bagianbawah .kanan img{
+            float: right;
+            width: 14%;
+            cursor: pointer;
+        }
+
+        .navigation{
+            position: absolute;
+            margin-top: 1%;
+            margin-left: -22%;
+            transform:translateX(-50%);
+            display: flex;
+        }
+
+        .bar{
+            border: 2px solid rgb(139, 202, 97);
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.5s;
+            width: 5px;
+            height: 5px;
+            margin: 10px;
+        }
+
+        #now{
+            border: 2px solid rgb(139, 202, 97);
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.5s;
+            width: 5px;
+            height: 5px;
+            margin: 10px;
+            background-color: rgb(87, 124, 31);
+        }
+
+        .bar:hover{
+            background-color: rgb(87, 124, 31);
+        }
+
+/* Fitur corona */
+
+        .page2 .isiblog2 .tulisan{
+            font-family: 'Noto Sans', sans-serif;
+            margin-top: 100%;
+            font-size: 10px;
+            margin-left: -325%;
+        }
+
+        .page2 .isiblog3{
+            display: flex;
+            flex-direction: row;
+            margin-left: 5%;
+            margin-top: 35%;
+        }
+
+        .page2 .isiblog3 .box{
+            background-color: #516528;
+            border-radius: 20px;
+            width: 25%;
+            height: 300px;
+            margin-left: 4%;
+            margin-right: 9%;
+        }
+
+        .page2 .isiblog3 .box .image{
+            position: relative;
+            width: 100%;
+            height: 150px;
+        }
+
+        .page2 .isiblog3 .box .image img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .page2 .isiblog3 .box .text{
+            margin-top: 5%;
+        }
+
+        .page2 .isiblog3 .box .text h1{
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 10px;
+            color: white;
+            text-align: center;
+            margin-left: 2%;
+            font-weight: bold;
+        }
+
+        .page2 .isiblog3 .box .text h2{
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 10px;
+            color: white;
+            text-align: center;
+            margin-left: 2%;
+            font-weight: normal;
+        }
+
+        #buttonkedua{
+            margin-top: -10%;
+        }
+
+        .kotakbawah{
+            background-color: #516528;
+            height: 35vh;
+        }
+
+        .kotakbawah .isiteks{
+            text-align: center;
+            color: #B1C795;
+            font-family: 'Poppins', sans-serif;
+            font-size: 10px;
+            padding-top: 7%;
+        }
+
+        .kotakbawah .isiteks h2{
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -163,18 +492,22 @@
         <nav>
             <h1> <img src="b.png"></h1>
             <ul>
-                <li><a href="PROFIL">Profil</a></li>
-                <li><a href="BLOG">Blog</a></li>
-                <li><a href="JADWAL">Jadwal</a></li>
-                <li><a href="PREDIKSI">Prediksi</a></li>
-                <li><a href="BERANDA" id="home">Beranda</a></li>
+                <li><a href="file:///D:/PWEB/PWEB_TanamLoka/Profil/akun.html">Profil</a></li>
+                <li><a href="file:///D:/PWEB/PWEB_TanamLoka/BLOG/BLOG.html">Blog</a></li>
+                <li><a href="file:///D:/PWEB/PWEB_TanamLoka/jadwal%20harian/jadwal%20harian.html">Jadwal</a></li>
+                <li><a href="file:///D:/PWEB/PWEB_TanamLoka/PREDIKSI/prediksi.html">Prediksi</a></li>
+                <li><a href="file:///D:/PWEB/PWEB_TanamLoka/Beranda/Beranda.html" id="home">Beranda</a></li>
                 <span class="garis"></span>
             </ul> 
+        </nav>
     </div>
     <div class="menubawah">
         <nav>
             <ul>
-                <li><a href="Filter">Filter</a></li>
+                <li><a href="file:///D:/PWEB/PWEB_TanamLoka/isi%20blog/isi%20blog.html">Tips dan Trik</a></li>
+                <li><a href="file:///D:/PWEB/PWEB_TanamLoka/isi%20blog/isi%20blog.html">Cara Penanaman</a></li>
+                <li><a href="file:///D:/PWEB/PWEB_TanamLoka/isi%20blog/isi%20blog.html">Terpopuler</a></li>
+                <span class="file:///D:/PWEB/PWEB_TanamLoka/isi%20blog/isi%20blog.html"></span>
             </ul>
             <div class="searchbutton"></div>
             <input type="text" placeholder="Cari">
@@ -189,13 +522,232 @@
 
 <section class="page2">
     <div class="bigkotak">
-        <h1>Kunjungi Blog Kami</h1>
-        <h2>Kunjungi Blog Kami</h2>
-        <h3>Kunjungi Blog Kami</h3>
-        </div>
-        <div class="blog1"></div>
+        <ul>
+            <li>Kunjungi Blog Kami</li>
+            <li id="kunjungikedua">Kunjungi Blog Kami</li>
+            <li id="kunjungiketiga">Kunjungi Blog Kami</li>
+            <span class="garisblog1"></span>
+            <span class="garisblog2"></span>
+            <span class="garisblog3"></span>
+        </ul>
     </div>
+    <div class="isiblog1">
+        <div class="box">
+            <div class="image">
+                <img src="1.jpg" width="100%" height="40%">
+                <div class="orang">
+                    <img src="org1.png" class="orang">
+                </div>
+            </div>
+            <div class="text">
+                <h1>Budi Susanto</h1>
+                <h2>Tips Sukses Menanam Padi</h2>
+                <h3>Sukses membudidayakan padi sekaligus bebas serangan hama wereng? Dulur perlu tau cara menanam padi yang tepat dan sudah terbukti hasilnya Salah satu Mitra Kami di Kabupaten Ngawi, menghasilkan panen padi hingga 12 ton Selain itu beliau juga bisa mencegah serangan hama wereng yang selama ini menjadi momok tersendiri bagi petani padi pada umumnya...</h3>
+            </div>
+            <div class="button">
+                <input type="button" value="Baca Selengkapnya">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="2.jpg">
+                <div class="orang">
+                    <img src="org2.png" class="orang">
+                </div>
+            </div>
+            <div class="text">
+                <h1>Tono Sukamto</h1>
+                <h2>Tips Menentukan Perairan</h2>
+                <h3>Sukses membudidayakan padi sekaligus bebas serangan hama wereng?
+                    Dulur perlu tau cara menanam padi yang tepat dan sudah terbukti hasilnya
+                   Salah satu Mitra Kami di Kabupaten Ngawi, menghasilkan panen padi hingga 12 ton
+                   Selain itu beliau juga bisa mencegah serangan hama wereng yang selama ini
+                    menjadi momok tersendiri bagi petani padi pada umumnya...</h3>
+            </div>
+            <div class="button">
+                <input type="button" value="Baca Selengkapnya">
+            </div> 
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="3.jpg">
+                <div class="orang">
+                    <img src="org3.png" class="orang">
+                </div>
+            </div>
+            <div class="text">
+                <h1>Dono Kasino</h1>
+                <h2>Tips Sukses Menanam Bawang</h2>
+                <h3>Sukses membudidayakan padi sekaligus bebas serangan hama wereng?
+                    Dulur perlu tau cara menanam padi yang tepat dan sudah terbukti hasilnya
+                   Salah satu Mitra Kami di Kabupaten Ngawi, menghasilkan panen padi hingga 12 ton
+                   Selain itu beliau juga bisa mencegah serangan hama wereng yang selama ini
+                    menjadi momok tersendiri bagi petani padi pada umumnya...</h3>
+            </div>
+            <div class="button">
+                <input type="button" value="Baca Selengkapnya">
+            </div>
+        </div>
+    </div>
+
+    <div class="isiblog2">
+        <div class="box">
+            <div class="image">
+                <img src="4.jpg" width="100%" height="40%">
+                <div class="orang">
+                    <img src="org4.png" class="orang">
+                </div>
+            </div>
+            <div class="text">
+                <h1>Budi Susanto</h1>
+                <h2>Tips Sukses Menanam Padi</h2>
+                <h3>Sukses membudidayakan padi sekaligus bebas serangan hama wereng? Dulur perlu tau cara menanam padi yang tepat dan sudah terbukti hasilnya Salah satu Mitra Kami di Kabupaten Ngawi, menghasilkan panen padi hingga 12 ton Selain itu beliau juga bisa mencegah serangan hama wereng yang selama ini menjadi momok tersendiri bagi petani padi pada umumnya...</h3>
+            </div>
+            <div class="button">
+                <input type="button" value="Baca Selengkapnya">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="5.jpg">
+                <div class="orang">
+                    <img src="org5.png" class="orang">
+                </div>
+            </div>
+            <div class="text">
+                <h1>Tono Sukamto</h1>
+                <h2>Tips Menentukan Perairan</h2>
+                <h3>Sukses membudidayakan padi sekaligus bebas serangan hama wereng?
+                    Dulur perlu tau cara menanam padi yang tepat dan sudah terbukti hasilnya
+                   Salah satu Mitra Kami di Kabupaten Ngawi, menghasilkan panen padi hingga 12 ton
+                    Selain itu beliau juga bisa mencegah serangan hama wereng yang selama ini
+                    menjadi momok tersendiri bagi petani padi pada umumnya...</h3>
+            </div>
+            <div class="button">
+                <input type="button" value="Baca Selengkapnya">
+            </div> 
+        </div>
     
+        <div class="box">
+            <div class="image">
+                <img src="6.jpg">
+                <div class="orang">
+                    <img src="org6.png" class="orang">
+                </div>
+            </div>
+            <div class="text">
+                <h1>Dono Kasino</h1>
+                <h2>Tips Sukses Menanam Bawang</h2>
+                <h3>Sukses membudidayakan padi sekaligus bebas serangan hama wereng?
+                    Dulur perlu tau cara menanam padi yang tepat dan sudah terbukti hasilnya
+                   Salah satu Mitra Kami di Kabupaten Ngawi, menghasilkan panen padi hingga 12 ton
+                   Selain itu beliau juga bisa mencegah serangan hama wereng yang selama ini
+                    menjadi momok tersendiri bagi petani padi pada umumnya...</h3>
+            </div>
+            <div class="button">
+                <input type="button" value="Baca Selengkapnya">
+            </div>
+
+            <div class="bagianbawah">
+                <div class="kiri">
+                    <img src="left.png">
+                </div>
+                <div class="kanan">
+                    <img src="right.png">
+                </div>
+                <div class="navigation">
+                    <label for="" class="bar" id="now"></label>
+                    <label for="" class="bar"></label>
+                    <label for="" class="bar"></label>
+                    <label for="" class="bar"></label>
+                    <label for="" class="bar"></label>
+                    <label for="" class="bar"></label>
+                    <label for="" class="bar"></label>
+                </div>
+            </div> 
+            <div class="tulisan">
+                <h1>LIHAT BERITA TERKINI TENTANG COVID-19</h1>
+            </div>
+        </div>
+    </div> 
+    <div class="isiblog3">
+        <div class="box">
+            <div class="image">
+                <img src="covid1.jpg" width="100%" height="40%">
+            </div>
+            <div class="text">
+                <h1>Pejabat WHO: Orang Muda Sehat Bisa Tak Dapat 
+                    Vaksin COVID-19 Sampai 2022</h1>
+                <h2>13 Okt 2020 12:00
+                    WHO mengatakan bahwa kalangan muda yang sehat 
+                    kemungkinan tidak mendapatkan vaksin COVID-19 hingga tahun </h2>
+            </div>
+            <div class="button">
+                <input type="button" value="Baca Selengkapnya">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="covid2.jpg">
+            </div>
+            <div class="text">
+                <h1>Persaingan Vaksin Covid-19, Rusia Pajang
+                    Foto Hoax Sudutkan Vaksin Inggris</h1>
+                <h2>16 Okt 2020 12:00
+                    Persaingan dalam penjualan vaksin covid-19 mulai menggunakan 
+                    hoaks. Terbaru, Rusia mengeluarkan kampanye hoaks
+                     terkait vaksin AstraZeneca yang bekerja sama 
+                    dengan Oxford University di Inggris.</h2>
+            </div>
+            <div class="button" id="buttonkedua">
+                <input type="button" value="Baca Selengkapnya">
+            </div> 
+        </div>
+    
+        <div class="box">
+            <div class="image">
+                <img src="covid3.jpeg">
+            </div>
+            <div class="text">
+                <h1>Lebihi Kasus Baru Positif Covid 4.411, Pasien 
+                    Sembuh Tembus 5.810 Orang per 15 Oktober
+                    </h1>
+                <h2>15 okt 2020 22.00
+                    Data update pasien Corona Covid-19 ini tercatat sejak Rabu,
+                     14 Oktober 2020, pukul 12.00 WIB hingga hari ini pukul 12.00 WIB.</h2>
+            </div>
+            <div class="button">
+                <input type="button" value="Baca Selengkapnya">
+            </div>
+
+            <div class="bagianbawah">
+                <div class="kiri">
+                    <img src="left.png">
+                </div>
+                <div class="kanan">
+                    <img src="right.png">
+                </div>
+                <div class="navigation">
+                    <label for="" class="bar" id="now"></label>
+                    <label for="" class="bar"></label>
+                    <label for="" class="bar"></label>
+                    <label for="" class="bar"></label>
+                    <label for="" class="bar"></label>
+                    <label for="" class="bar"></label>
+                    <label for="" class="bar"></label>
+                </div>
+    </div>                       
+</section>
+
+<section class="kotakbawah">
+    <div class="isiteks">
+        <h1>Loka Tanam Blog</h1>
+        <h2>Copyright © Date Name. All rights reserved.</h2>
+    </div>
 </section>
 </body>
 </html>

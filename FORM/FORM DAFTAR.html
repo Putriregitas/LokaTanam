@@ -120,10 +120,6 @@
             cursor: pointer;
         }
 
-        #hide1{
-            display: none;
-        }
-
         .sosmed {
             text-align: center;
             padding-bottom:5% ;
@@ -158,9 +154,8 @@
             <input type="text" id="inputan" class="email" placeholder="Email" required="">
             <br><br>
             <input type="password" id="input" placeholder="Kata Sandi" required="">
-            <span class="eye" onclick="Functionku()">
-                <i id="hide1" class="fa fa-eye" > <img src="eye.png" alt="" width="20px"> </i>
-                <i id="hide2" class="fa fa-eye-slash"> <img src="eyeslash.png" alt="" width="20px"> </i>
+            <span class="eye">
+                <i class="fa fa-eye-slash"> <img src="eyeslash.png" alt="" width="20px"> </i>
             </span>
             <br><br>
             <input type="submit" value="Daftar">  </input>
@@ -176,28 +171,7 @@
             <a href="#"> <img src="twt.png" alt=""></a>
         </div>
         
-    </div>
-    
-    <script>
-        function Functionku(){
-            var x = document.getElementById("input");
-            var y = document.getElementById("hide1");
-            var z = document.getElementById("hide2");
-
-            if(x.type === 'password'){
-                x.type = "text";
-                y.style.display = "block";
-                z.style.display = "none";
-            }
-            else{
-                x.type = "password";
-                y.style.display = "none";
-                z.style.display = "block";
-            }
-
-        }
-    </script>
-        
+    </div>    
 
 </body>
 </html>
