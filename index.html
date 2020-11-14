@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #page1{
+            background: url("bg.png");
+            border-image: none;
+            background-size: cover;
+            height: 120vh;
+
+        }
+
+
+        .menu h1{
+            position:absolute;
+            left: 4%;
+            top: 2%;
+        }
+
+        .menu h2{
+            position: absolute;
+            margin-top: 15%;
+            margin-left: 34%;
+        }
+
+        .menu h3{
+            position: absolute;
+            margin-top: 30%;
+            margin-left: 31%;
+            font-family: 'Gill Sans MT';
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            font-weight: 100;
+        }
+
+        .menu h4{
+            position: absolute;
+            margin-top: 32%;
+            margin-left: 32%;
+            font-family: 'Gill Sans MT';
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            font-weight: 100;
+        }
+
+        .menu p{
+            margin-top: 23%;
+            margin-left: 3%;
+        }
+
+        .menu p img{
+            width: 2.5%;
+
+        }
+
+        nav ul{
+            list-style: none;
+        }
+
+        nav ul li a{
+            float: right;
+            text-decoration: none;
+            color:white;
+            padding: 0px 40px;
+            text-align: center;
+            line-height: 40px;
+            height: 40px;
+            margin-top: 1%;
+            font-family: 'montserrat', sans-serif;            
+        }
+
+        .garis{
+            position: absolute;
+            content: '';
+            width: 87px;
+            height: 2px;
+            background-color: #698238;
+            margin-left: 44%;
+            margin-top: 4%;
+        }
+
+        #masuk
+        {
+            border: #707070;
+            outline: none;
+            height: 35px;
+            width: 120px;
+            margin-top: 140%;
+            margin-left: -105%;
+            border-radius: 8px;
+            background-color: #698238;
+            font-size: 15px;
+            font-family: 'Segoe UI';
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+        }
+
+        #daftar
+        {
+            border: #707070;
+            outline: none;
+            height: 35px;
+            width: 120px;
+            margin-top: 20%;
+            margin-left: 8%;
+            border-radius: 8px;
+            background-color: #698238;
+            font-size: 15px;
+            font-family: 'Segoe UI';
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+        }
+
+        #masuk:hover{
+            cursor: pointer;
+            background-color: rgb(47, 70, 17);
+        }
+
+        #daftar:hover{
+            cursor: pointer;
+            background-color: rgb(47, 70, 17);
+        }
+
+        #home{
+            color: #698238;
+        }
+
+/* halaman kedua */
+        #jadwal{
+            width: 100%;
+        }
+
+        .isi p{
+            float: right;
+            margin-right: 5%;
+            margin-top: -2%;
+        }
+
+        .isi h1{
+            margin-top: 25%;
+        }
+
+        .isi h2{
+            margin-top: -35%;
+            margin-left: 23%;
+        }
+
+        .isi h3{
+            text-align: center;
+            line-height: 2px;
+            font-family: 'montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 40px;
+            margin-left: 40%;
+            margin-top: -22%;
+        }
+
+        .isi h4{
+            float: right;
+            margin-right: 20%;
+            margin-top: 8%;
+        }
+
+        .isi h4 img{
+            width: 80%;
+        }
+
+        .text{
+            width: 35%;
+            text-align: center;
+            font-family: 'montserrat', sans-serif;
+            margin-left: 53%;
+        }
+
+        .button input[type="button"]
+        {
+            border: #707070;
+            outline: none;
+            height: 40px;
+            width: 220px;
+            margin-top: 4%;
+            margin-left: 62%;
+            border-radius: 8px;
+            background-color: #698238;
+            font-size: 13px;
+            font-family: 'Segoe UI';
+            cursor: pointer;
+            color: white;
+            font-weight: bold; 
+        }
+
+        .button input[type="button"]:hover{
+            cursor: pointer;
+            background-color: rgb(47, 70, 17);
+        }
+
+/* halaman ketiga */
+        #cuaca{
+            width: 100%;
+        }
+
+        .isi2 p{
+            float: left;
+            margin-left: 5%;
+            margin-top: -5%;
+        }
+
+        .isi2 h1{
+            margin-top: 40%;
+            margin-left: 51%;
+        }
+
+        .isi2 h2{
+            margin-top: -48%;
+            margin-left: 65%;
+        }
+
+        #spot{
+            font-family: 'montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+            margin-left: 5%;
+            margin-top: -22%;
+            width: 40%;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        .text2{
+            width: 28%;
+            text-align: center;
+            font-family: 'montserrat', sans-serif;
+            margin-left: 12%;
+        }
+
+        .button2 input[type="button"]
+        {
+            border: #707070;
+            outline: none;
+            height: 40px;
+            width: 220px;
+            margin-top: 6%;
+            margin-left: -23%;
+            border-radius: 8px;
+            background-color: #698238;
+            font-size: 13px;
+            font-family: 'Segoe UI';
+            cursor: pointer;
+            color: white;
+            font-weight: bold; 
+        }
+
+        .button2 input[type="button"]:hover{
+            cursor: pointer;
+            background-color: rgb(47, 70, 17);
+        }
+
+/* halaman keeempat */
+        #blog{
+            width: 100%;
+        }
+
+        .isi3 h1{
+            margin-top: 30%;
+            margin-left: -13%;
+
+        }
+
+        .kotak h1{
+            margin-left: 25%;
+            margin-top: -35%;
+        }
+
+        .kotak{
+            margin-top: -30%;
+            margin-left: 30%;
+        }
+
+        .kotak2{
+            margin-top: -17%;
+            margin-left: 60%;
+            height: 50%;
+        }
+
+        .tombol{
+            position: absolute;
+            margin-top: 8%;
+            margin-left: 60%;
+        }
+
+        .navv{
+            position: absolute;
+            margin-top: 8%;
+            margin-left: 60%;
+            transform:translateX(-50%);
+            display: flex;
+        }
+
+        .bar{
+            background-color: #C5D5C0;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.5s;
+            width: 8px;
+            height: 8px;
+            margin: 10px;
+        }
+
+        #now{
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.5s;
+            width: 8px;
+            height: 8px;
+            margin: 10px;
+            background-color: #67AA52;
+        }
+
+        .bar:hover{
+            background-color: rgb(87, 124, 31);
+        }
+
+        .button3 input[type="button"]
+        {
+            border: #707070;
+            outline: none;
+            height: 30px;
+            width: 150px;
+            border-radius: 8px;
+            background-color: #698238;
+            font-size: 13px;
+            font-family: 'Segoe UI';
+            cursor: pointer;
+            color: white;
+            font-weight: bold; 
+        }
+
+        .button3{
+            margin-top: -85%;
+            margin-left: -170%;
+        }
+
+        .buttonlain input[type="button"]
+        {
+            border: #707070;
+            outline: none;
+            height: 30px;
+            width: 150px;
+            border-radius: 8px;
+            background-color: #698238;
+            font-size: 13px;
+            font-family: 'Segoe UI';
+            cursor: pointer;
+            color: white;
+            font-weight: bold; 
+        }
+
+        .buttonlain{
+            margin-left: 54%;
+            margin-top: -38%;
+
+        }
+
+
+        .button3 input[type="button"]:hover{
+            cursor: pointer;
+            background-color: rgb(47, 70, 17);
+        }
+
+        .buttonlain input[type="button"]:hover{
+            cursor: pointer;
+            background-color: rgb(47, 70, 17);
+        }
+
+        .kotakbawah{
+            background-color: #67AA52;
+            height: 35vh;
+            margin-top: 40%;
+        }
+
+        .kotakbawah .isiteks{
+            text-align: center;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 10px;
+            padding-top: 7%;
+        }
+
+        .kotakbawah .isiteks h2{
+            font-size: 12px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+<section id="page1">
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="../Profil/akun.html">PROFIL</a></li>
+                <li><a href="../BLOG/BLOG.html">BLOG</a></li>
+                <li><a href="../jadwal harian/jadwal harian.html">JADWAL</a></li>
+                <li><a href="../PREDIKSI/prediksi.html">PREDIKSI</a></li>
+                <li><a href="../index.html" id="home">BERANDA</a></li>
+                <span class="garis"></span>
+            </ul> 
+        </nav>
+        <h1> <img src="b.png"></h1>
+        <h2> <img src="a.png" width="130%"></h2>
+        <h3><i>WEBSITE PERTANIAN YANG ANDA BUTUHKAN</i></h3>
+        <h4><i>UNTUK MENUNJANG KEGIATAN PERTANIAN</i></h4>
+        <br><br>
+        <span class="tombol">
+            <a href="../LOGIN/PERWEB.html"><input type="submit" value="MASUK" id="masuk"></input></a>
+            <a href="../FORM/FORM DAFTAR.html"><input type="submit" value="DAFTAR" id="daftar"></input></a>
+        </span>
+        <p><img src="medsos.png"></p>
+    </div>
+</section>
+
+<section id="jadwal">
+    <div class="isi">
+        <p><img src="titik.png"></p>
+        <h1> <img src="page1.png"></h1>
+        <h2> <img src="schedule.png"></h2>
+        <h3>CATAT JADWAL ANDA !</h3>
+        <br><br>
+        <div class="text">
+            <p>Anda bisa mencatat bibit apa saja yang anda tanam,
+            hari apa anda menanamnya, dan perkiraan 
+            kapan anda akan memanen semua tanaman tersebut</p>
+        </div>
+        <div class="button">
+            <a href="../jadwal harian/jadwal harian.html"><input type="button" value="PELAJARI SELENGKAPNYA"> </input></a>
+        </div>
+        <h4><img src="polkadot.png"></h4>
+    </div>
+</section>
+
+<section id="cuaca">
+    <div class="isi2">
+        <p><img src="titik.png"></p>
+        <h1> <img src="page2.png"></h1>
+        <h2> <img src="cuaca.png" height="330px"></h2>
+        <h3 id="spot">LIHAT PREDIKSI MUSIM TAHUN INI !</h3>
+        <br><br>
+        <div class="text2">
+            <p>
+                Anda bisa melihat prediksi musim yang akan datang dengan fitur cuaca yang terhubung dengan BMKG
+            </p>
+        </div>
+        <div class="button2">
+            <a href="../PREDIKSI/prediksi.html"></a><input type="button" value="PELAJARI SELENGKAPNYA"> </input>
+        </div>
+
+    </div>
+</section>
+
+<section id="blog">
+    <div class="isi3">
+        <h1> <img src="page3.png"></h1>
+    </div>
+    <div class="kotak">
+        <img src="kotak.png" id="kotak1">
+    </div>
+    <div class="kotak2">
+        <img src="kotak2.png" id="kotak2">
+    </div>
+    <div class="tombol">
+        <div class="button3">
+            <a href="../BLOG/BLOG.html"><input type="button" value="Baca Selengkapnya"> </input></a>
+        </div>
+        <div class="buttonlain">
+            <a href="../BLOG/BLOG.html"><input type="button" value="Baca Selengkapnya"> </input></a>
+        </div>
+    </div>
+    <div class="navv">
+        <label for="" class="bar" id="now"></label>
+        <label for="" class="bar"></label>
+        <label for="" class="bar"></label>
+        <label for="" class="bar"></label>
+    </div>
+        
+    </div>
+</section>
+
+<section class="kotakbawah">
+    <div class="isiteks">
+        <h1>Loka Tanam</h1>
+        <h2>Copyright © Date Name. All rights reserved.</h2>
+    </div>
+</section>
+
+    
+</body>
+</html>
