@@ -1,0 +1,209 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.pertanian{
+    justify-content: space-evenly; 
+    padding: 4% 8% ;
+    width: 12%;
+}
+
+#lokatanam{
+    width: 150px;
+    height: 90px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px){
+    #lokatanam{
+        width: 150px;
+        height: 90px;
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+    .pertanian{
+        justify-content: space-evenly; 
+        padding: 4% 8% ;
+        width: 12%;
+    }
+    #kolom{
+        background:rgba(131, 141, 119, 0.575);
+        width: 27%;
+        height: 80%;
+        /* margin: 50px ; */
+        color: white;
+        border-radius: 8% ;
+        margin-left: 40%;
+        margin-top: -0%;
+        border: rgba(43, 48, 43, 0.521) solid 0.4px;
+        box-shadow: 0 0 200px 50px rgba(128, 138, 111, 0.411);
+        justify-content: space-evenly;
+        position: center ;
+
+        
+    }
+}
+
+#kolom{
+    background:rgba(131, 141, 119, 0.575);
+    width: 27%;
+    padding-bottom: -10%;
+    /* margin: 50px ; */
+    color: white;
+    border-radius: 8% ;
+    margin-left: 40%;
+    margin-top: -0%;
+    border: rgba(43, 48, 43, 0.521) solid 0.4px;
+    box-shadow: 0 0 200px 50px rgba(128, 138, 111, 0.411);
+    justify-content: space-evenly;
+    position: relative ;
+}
+
+#nama{
+    width: 80%;
+    height: 20%;
+    margin-left: 25px;
+    border-radius: 10px;  
+    background-color: #bbc99b;
+    border: 2px solid #bbc99b; 
+    margin-top: 20px;
+
+}
+
+#email{
+    width: 300px;
+    height: 30px;
+    margin-left: 25px;
+    border-radius: 10px;  
+    background-color: #bbc99b;
+    border: 2px solid#bbc99b;
+}
+
+#sandi{
+    width: 300px;
+    height: 30px;
+    margin-left: 25px;
+    border-radius: 10px;  
+    background-color: #bbc99b;
+    border: 2px solid#bbc99b;
+}
+
+
+.masuk{
+    width: 307px;
+    height: 34px;
+    margin-left: 25px;
+    border-radius: 10px;  
+    background-color: #bbc99b;
+    border: 2px solid#bbc99b;
+    color: white;
+}
+
+.hover:hover{
+    background-color: #98ac81;
+}
+
+.eye{
+    margin-left: -28px;
+    margin-top: 11px;
+    position: absolute;
+    cursor: pointer;
+    text-align: left;
+}
+
+
+.fokus:focus{
+    border-color: rgb(88, 100, 79);
+    border-radius: 10px;
+    outline-style: none;
+}
+
+
+::placeholder{
+    color: white;
+}
+
+.nama input{
+    color: white;
+}
+
+#ingat{
+    margin-left: 25px;
+}
+
+#sekarang{
+    margin-left: 24px;
+}
+
+#lupa{
+    margin-left: 85px; 
+}
+
+#atau{
+    margin-left: 105px;
+}
+
+#atau::before{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color:#CFCFCF ;
+    margin-top: 0.6%;
+    margin-left: -4%;
+}
+
+#atau::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color:#CFCFCF ;
+    margin-top: 0.65%;
+    margin-left: 0.5%;
+}
+
+.gugel{
+    margin-left: 42.5px;
+}
+
+.apk{
+    margin-left: 20px;
+}
+
+
+h1{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 80px;
+}
+
+table{
+    margin-left: -140px;
+}
+
+th{
+    border: 1px solid #3f4633;
+    color: white;
+    background-color: #778557;
+}
+
+tr td{
+    border: 1px solid #828d69;
+    color: white;
+    background-color: #bbc99b;
+}
+
+.tengah{
+    align: center;
+}
