@@ -30,4 +30,3 @@ function ValidateForm(){
         alert("Data berhasil dimasukkan !")
         return;
     }
-}

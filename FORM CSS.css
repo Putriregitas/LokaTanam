@@ -23,7 +23,7 @@ body{
     padding-bottom: 0% auto ;
     margin-top: 15%;
     margin-left: 28%;
-    padding: 0;
+    padding: 0 auto;
     text-align: center;
     background: rgba(182, 181, 181, 0.568);
     color: black;
@@ -46,6 +46,7 @@ body{
 
 ::placeholder{
     color: white;
+    margin-right: 20px;
 }
 
 .inboxdaftar input[type="submit"]
@@ -113,6 +114,10 @@ body{
     cursor: pointer;
 }
 
+#hide1{
+    display: none;
+}
+
 .sosmed {
     text-align: center;
     padding-bottom:5% ;
@@ -133,8 +138,16 @@ body{
     background-color:#6D7659;
 }
 
-@media screen and (max-width:"576px"){
+@media screen and (max-width:576px){
     .inboxdaftar{
-        height: 40%;
-        
+        width: 100%;
     }
+
+    .inboxdaftar input{
+        width: 100%;
+    }
+
+    .inboxdaftar input[type="submit"]{
+        width:100px;
+    }
+}
