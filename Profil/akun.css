@@ -1,140 +1,134 @@
-html,body{
-    margin: 0;
-    padding: 0;
-}
-
 body{
-    background-image: url(bgakun.jpeg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    margin: 0 auto;
+    padding: 0 auto; 
+    background: url("bgakun.jpeg");
+    border-image: none;
     background-size: cover;
-}
-
-.atas ul{
-    height: 40px;  
-    padding-top: 0px;
-    margin: 0px;
-}
-
-nav ul{
-    list-style: none;
-}
-
-nav ul li a{
-    float: right;
-    text-decoration: none;
-    color: white;
-    padding: 0px 45px;
-    text-align: center;
-    line-height: 40px;
-    height: 40px;
-    margin-top: 10px;
-}
-
-.pertanian{
-    position: absolute;
-    cursor: pointer;
-    margin-top: -30px;
-    margin-left: 50px;
-}
-
-
-#lokatanam{
-    width: 110px;
-    height: 70px;
-    margin-left: 470px;
-    margin-top: 10px;
-}
-
-#fotoakun{
-    width: 250px;
-    height: 250px;
-    margin-left: 180px;
-    margin-top: -20px;
-
-}
-
-#kolom{
-    background:rgba(131, 141, 119, 0.575);
-    width: 600px;
-    height: 520px;
-    margin: 50px ;
-    color: white;
-    border-radius: 25px;
-    margin-left: 370px;
-    margin-top: 40px;
-    border: rgba(43, 48, 43, 0.521) solid 0.4px;
-    box-shadow: 0 0 200px 50px rgba(128, 138, 111, 0.411);
-}
-
-#nama{
-    width: 380px;
-    height: 30px;
-    margin-left: 100px;
-    border-radius: 10px;  
-    background-color: #bbc99b;
-    border: 2px solid #bbc99b; 
-    margin-top: 20px;
-}
-
-#pengguna{
-    margin-left: 100px;
-    margin-right: -200px;
-    position: absolute;
-    padding top: 20%;
+    background-position: center;
 }
 
 #email{
-    margin-left: 100px;
-    margin-top: -50px
-    padding: 0px;
-}
-
-#email2{
-    width: 380px;
+    width: 88%;
     height: 30px;
-    margin-left: 100px;
-    border-radius: 10px;  
-    background-color: #bbc99b;
-    border: 2px solid#bbc99b;
 }
 
-#masuk{
-    width: 200px;
+#namapengguna{
+    width: 88%;
+}
+
+.inbox{
+    width: 40%;
+    padding-bottom: 0% auto ;
+    margin-top: 15%;
+    margin-left: 28%;
+    padding: 0 auto;
+    text-align: center;
+    background: rgba(182, 181, 181, 0.568);
+    color: black;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.inboxdaftar input{
+    border: #707070;
+    outline:none;
+    background-color: #B3BBA0;
+    width: 217px;
     height: 30px;
-    margin-left: 200px;
-    border-radius: 10px;  
-    background-color: #bbc99b;
-    border: 2px solid#bbc99b;
-    margin-top: 20px;
-    color: beige;
+    border-radius: 8px;
+    border: 1px solid #707070;
+    color: white;
+
 }
-
-#kamera{
-    margin-left: -58px;
-    margin-top: 150px;
-    position: absolute;
-    cursor: pointer;
-    text-align: left;
-}
-
-
-.fokus:focus{
-    border-color: rgb(227, 255, 227);
-    border-radius: 10px;
-    outline-style: none;
-}
-
 
 ::placeholder{
     color: white;
 }
 
-.nama input{
+.inboxdaftar button[type="submit"]
+{
+    border: #707070;
+    outline: none;
+    height: 30px;
+    width: 300px;
+    margin-top: 3%;
+    border-radius: 8px;
+    background-color: #B3BBA0;
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    cursor: pointer;
     color: white;
 }
 
-#ingat{
-    margin-left: 25px;
+.inboxdaftar button[type="submit"]:hover
+{
+    cursor: pointer;
+    background-color:#6D7659;
+    color:#3E4D19;
 }
 
+
+
+.inbox h1{
+    position:absolute;
+    left: 4%;
+    top: 2%;
+}
+
+.eye{
+    position: absolute;
+    text-align: right;
+    margin-top: 0.7%;
+    margin-left: -2.5%;
+    cursor: pointer;
+}
+
+#hide1{
+    display: none;
+}
+
+.sosmed {
+    text-align: center;
+    padding-bottom:5% ;
+}
+
+.sosmed a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #B3BBA0;
+    line-height: 50px;
+    margin: 5px;
+    border: 1px solid #707070 ;
+}
+
+.sosmed a:hover{
+    background-color:#6D7659;
+}
+
+@media screen and (max-width:576px){
+    body{
+        background-size: auto;
+    }
+    .inbox{
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: -10%;
+    }
+
+    .inbox h1 img{
+        width: 50px;
+        margin-bottom: 40%;
+    }
+
+    #namapengguna{
+        margin-top: -5%;
+        width: 90%;}
+
+    .inbox button[type="submit"]{
+        width: 90%;
+    }
+    
+}

@@ -1,8 +1,8 @@
 function Functionku(){
-    var x = document.getElementById("sandi");
-    var y = document.getElementById("hide");
+    var x = document.getElementById("psw");
+    var y = document.getElementById("hide1");
     var z = document.getElementById("hide2");
-    
+
     if(x.type === 'password'){
         x.type = "text";
         y.style.display = "block";
@@ -17,11 +17,11 @@ function Functionku(){
 
 function inputform()
 {
-    var nama = document.getElementById("nama");
+    var namapengguna = document.getElementById("namapengguna");
     var email = document.getElementById("email");
-    var sandi = document.getElementById("sandi");
+    var psw = document.getElementById("psw");
 
-    if (nama.value =="")
+    if (namapengguna.value =="")
         {
             alert("Masukkan Nama Pengguna");
             nama.fokus();
@@ -33,7 +33,7 @@ function inputform()
             email.fokus();
         }
 
-    else if (sandi.value =="")
+    else if (psw.value =="")
         {
             alert("Masukkan sandi Anda ");
             sandi.fokus();
