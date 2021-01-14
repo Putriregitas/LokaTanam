@@ -39,7 +39,9 @@ nav ul li a{
     padding: 0px 45px;
     text-align: center;
     line-height: 40px;   
+    
 }
+
 
 .pertanian{
     position: absolute;
@@ -79,13 +81,6 @@ nav ul li a{
     outline-style: none;
 }
 
-.gambarcari{
-    margin-left: 652px;
-    margin-top: -76px;
-    position: absolute;
-    cursor: pointer;
-    text-align: right;
-}
 
 h2{
     font-size: 40px;
@@ -111,4 +106,94 @@ h2{
     position: absolute;
     cursor: pointer;
     text-align: right;
+}
+
+@media screen and (max-width: 576px){
+    .kotak h2{
+        font-size: 16px;
+        margin-top: -110px;
+        margin-left: 20px;
+    }
+
+    .kotak .tulisan {
+        margin-top: -5px;
+    }
+
+    .body .pertanian img{
+        width: 80px;
+        margin-top: 6px ;
+        /* justify-content: flex-start; */
+        position: absolute;
+        cursor: pointer;
+        margin-left: -10px;
+    }
+
+    nav ul li a {
+        padding: 0px 5px;
+        font-size: 10px;
+    }
+
+    .bawah ul li a{
+        padding-right: 10px;
+        margin-right: 10px;
+        float: right;
+    }
+
+    .atas ul li a{
+        padding-right: 5px;
+        margin-right: 5px;
+        float: right;
+    }
+
+    .iklim{
+        margin-right:40px;
+    }
+
+    .kotak input[type="search"]{
+        border-radius: 15px;
+        border: none;
+        color: gray;
+        margin-left: 240px;
+        height:  17px;
+        width: 100px;
+        margin-top: 20px;
+        
+    }
+
+    .kotak input[type="date"]{
+        border-radius: 15px;
+        border: none;
+        color: gray;
+        margin-left: 240px;
+        height:  17px;
+        width: 100px;
+        margin-top: 70px;
+        margin-bottom: -40px;
+        
+    }
+
+    .kotak .kotak2 .grafik img{
+        width: 42%;
+        margin-right: 13%;
+        position: center;
+        margin-top: -38px;
+        
+    }
+
+    .kotak .kotak2{
+        width: 70%;
+        height: 155px;
+        background:rgba(177, 185, 169, 0.781);
+        margin-top: 120px;
+        border-radius: 15px;
+    }
+
+    .kotak{
+        background-image: url("pemandangan.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 520px;
+        width: 100%;
+        margin-top: -16px;
+    }
 }

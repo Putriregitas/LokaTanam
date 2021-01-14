@@ -13,7 +13,7 @@ body{
 
 .pertanian{
     justify-content: space-evenly; 
-    padding: 4% 8% ;
+    padding: 2% 8% ;
     width: 12%;
 }
 
@@ -24,7 +24,7 @@ body{
     margin-top: 30px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 576px){
     #lokatanam{
         width: 150px;
         height: 90px;
@@ -43,7 +43,7 @@ body{
         /* margin: 50px ; */
         color: white;
         border-radius: 8% ;
-        margin-left: 40%;
+        margin-left: 20%;
         margin-top: -0%;
         border: rgba(43, 48, 43, 0.521) solid 0.4px;
         box-shadow: 0 0 200px 50px rgba(128, 138, 111, 0.411);
@@ -56,22 +56,21 @@ body{
 
 #kolom{
     background:rgba(131, 141, 119, 0.575);
-    width: 27%;
-    padding-bottom: -10%;
-    /* margin: 50px ; */
+    width: 350px;
+    height: 600px;
+    margin: 50px ;
     color: white;
-    border-radius: 8% ;
-    margin-left: 40%;
+    border-radius: 25px ;
+    margin-left: 37%;
     margin-top: -0%;
     border: rgba(43, 48, 43, 0.521) solid 0.4px;
     box-shadow: 0 0 200px 50px rgba(128, 138, 111, 0.411);
-    justify-content: space-evenly;
-    position: relative ;
+
 }
 
 #nama{
-    width: 80%;
-    height: 20%;
+    width: 300px;
+    height: 30px;
     margin-left: 25px;
     border-radius: 10px;  
     background-color: #bbc99b;
