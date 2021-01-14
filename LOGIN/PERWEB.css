@@ -1,13 +1,12 @@
-html,body{
-    margin: 0;
-    padding: 0;
-}
-
 body{
-    background-image: url(background.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    margin: 0 auto;
+    padding: 0 auto; 
+    background: url("background.png");
+    border-image: none;
     background-size: cover;
+<<<<<<< HEAD
+    background-position: center;
+=======
     
 }
 
@@ -77,132 +76,173 @@ body{
     border: 2px solid #bbc99b; 
     margin-top: 20px;
 
+>>>>>>> 969994df9c219532a337b43ae96f840c12be2277
 }
 
 #email{
-    width: 300px;
+    width: 88%;
     height: 30px;
-    margin-left: 25px;
-    border-radius: 10px;  
-    background-color: #bbc99b;
-    border: 2px solid#bbc99b;
 }
 
-#sandi{
-    width: 300px;
+#psw{
+    width: 88%;
     height: 30px;
-    margin-left: 25px;
-    border-radius: 10px;  
-    background-color: #bbc99b;
-    border: 2px solid#bbc99b;
 }
 
+#namapengguna{
+    width: 88%;
+}
 
-.masuk{
-    width: 307px;
-    height: 34px;
-    margin-left: 25px;
-    border-radius: 10px;  
-    background-color: #bbc99b;
-    border: 2px solid#bbc99b;
+.inboxdaftar{
+    width: 40%;
+    padding-bottom: 0% auto ;
+    margin-top: 15%;
+    margin-left: 28%;
+    padding: 0 auto;
+    text-align: center;
+    background: rgba(182, 181, 181, 0.568);
+    color: black;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.inboxdaftar input{
+    border: #707070;
+    outline:none;
+    background-color: #B3BBA0;
+    width: 217px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid #707070;
     color: white;
+
 }
-
-.hover:hover{
-    background-color: #98ac81;
-}
-
-.eye{
-    margin-left: -28px;
-    margin-top: 11px;
-    position: absolute;
-    cursor: pointer;
-    text-align: left;
-}
-
-
-.fokus:focus{
-    border-color: rgb(88, 100, 79);
-    border-radius: 10px;
-    outline-style: none;
-}
-
 
 ::placeholder{
     color: white;
 }
 
-.nama input{
+.inboxdaftar button[type="submit"]
+{
+    border: #707070;
+    outline: none;
+    height: 30px;
+    width: 300px;
+    margin-top: 3%;
+    border-radius: 8px;
+    background-color: #B3BBA0;
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    cursor: pointer;
     color: white;
 }
 
-#ingat{
-    margin-left: 25px;
+.inboxdaftar button[type="submit"]:hover
+{
+    cursor: pointer;
+    background-color:#6D7659;
+    color:#3E4D19;
 }
 
-#sekarang{
-    margin-left: 24px;
-}
-
-#lupa{
-    margin-left: 85px; 
-}
-
-#atau{
-    margin-left: 105px;
-}
-
-#atau::before{
+.garis::before{
     position: absolute;
     content: '';
-    width: 50px;
+    width: 60px;
     height: 1px;
-    background-color:#CFCFCF ;
-    margin-top: 0.6%;
-    margin-left: -4%;
+    background-color: #CFCFCF;
+    margin-top: -1.8%;
+    margin-left: 5%;
 }
 
-#atau::after{
+.garis::after{
     position: absolute;
     content: '';
-    width: 50px;
+    width: 60px;
     height: 1px;
-    background-color:#CFCFCF ;
-    margin-top: 0.65%;
-    margin-left: 0.5%;
+    background-color: #CFCFCF;
+    margin-top: -1.8%;
+    margin-left: -9.6%;
 }
 
-.gugel{
-    margin-left: 42.5px;
+.inboxdaftar p{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+    margin-top: -2%;
+    font-family: 'Segoe UI';
 }
 
-.apk{
-    margin-left: 20px;
+
+.inboxdaftar h1{
+    position:absolute;
+    left: 4%;
+    top: 2%;
 }
 
+.eye{
+    position: absolute;
+    text-align: right;
+    margin-top: 0.7%;
+    margin-left: -2.5%;
+    cursor: pointer;
+}
 
-h1{
-    color: aliceblue;
+#hide1{
+    display: none;
+}
+
+.sosmed {
     text-align: center;
-    margin-top: 80px;
+    padding-bottom:5% ;
 }
 
-table{
-    margin-left: -140px;
+.sosmed a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #B3BBA0;
+    line-height: 50px;
+    margin: 5px;
+    border: 1px solid #707070 ;
 }
 
-th{
-    border: 1px solid #3f4633;
-    color: white;
-    background-color: #778557;
+.sosmed a:hover{
+    background-color:#6D7659;
 }
 
-tr td{
-    border: 1px solid #828d69;
-    color: white;
-    background-color: #bbc99b;
-}
+@media screen and (max-width:576px){
+    body{
+        background-size: auto;
+    }
+    .inboxdaftar{
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: -10%;
+    }
 
-.tengah{
-    align: center;
+    .inboxdaftar h1 img{
+        width: 50px;
+        margin-bottom: 40%;
+    }
+
+    #namapengguna{
+        margin-top: -5%;
+        width: 90%;}
+
+    .inboxdaftar button[type="submit"]{
+        width: 90%;
+    }
+
+    .garis{
+        display: none;
+    }
+
+    .eye{
+        margin-top: 2.5%;
+        margin-left: -7%;
+    }
+    
 }

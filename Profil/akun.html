@@ -3,40 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>akun</title>
+    <title>Profil</title>
     <link rel="stylesheet" href="akun.css">
     <script src="akun.js"></script>
-
+    
 </head>
+
 <body>
-    
-    <nav class="atas">
-        <ul>
-            <li><a href="../Profil/akun.html">Profil</a></li>
-            <li><a href="../BLOG/BLOG.html">Blog</a></li>
-            <li><a href="../jadwal%20harian/jadwal%20harian.html">Jadwal</a></li>
-            <li><a href="../PREDIKSI/prediksi.html">Prediksi</a></li>
-            <li><a href="../index.html">Beranda</a></li>
-        </ul>
-    </nav>
-
-    <div><img class="pertanian" src="Logo2.png"></div>
-
-    <div id="kolom">
-        <img id="lokatanam" src="logo.png" >
-        <img id="fotoakun" src="fotoakun2.png" >
-        <img id="kamera" src="kamera.png" >
-        <label id="kotak"></label>
-        <div id="pengguna" >Nama pengguna</div>
-        <input type="text" class="fokus" id="nama" placeholder="Nama pengguna"><br><br>
-        <label id="kotak"></label>
-        <div id="email">Email</div>
-        <input type="email" class="fokus" id="email2" placeholder="email">
-        <input onclick="inputform()" type="button" class="fokus" id="masuk" value="Simpan Data">
-        <br><br>
-
-
+    <div class="inbox">
+        <h1> <img src="Logo2.png" alt=""> </h1>
+        <h2> <img src="logo.png" alt="" width="40%"></h2>
+        <h3><img src="fotoakun2.png" alt="" width="30%"></h3>
+        <h4><img src="kamera.png" alt="" width="5%"></h4>
+        <form>
+            <input type="text" placeholder="Nama Pengguna" id="namapengguna">
+            <br><br>
+            <input type="text" id="email" class="email" placeholder="Email">
+            <br><br>
+            <button onclick="inputform()" type="button">simpan</button>
+            <br><br>
+        </form>        
     </div>
-    
 </body>
 </html>

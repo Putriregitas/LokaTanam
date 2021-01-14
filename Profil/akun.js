@@ -1,16 +1,16 @@
 
 function inputform()
 {
-    var nama = document.getElementById("nama");
-    var email2 = document.getElementById("email2");
+    var nama = document.getElementById("namapengguna");
+    var email = document.getElementById("email");
 
-    if (nama.value =="")
+    if (namapengguna.value =="")
     {
         alert("Masukkan Nama Anda");
         nama.fokus();
     }
 
-    else if (email2.value =="")
+    else if (email.value =="")
     {
         alert("Masukkan Email Anda ");
         email2.fokus();
