@@ -4,7 +4,79 @@ body{
     background: url("background.png");
     border-image: none;
     background-size: cover;
+<<<<<<< HEAD
     background-position: center;
+=======
+    
+}
+
+.pertanian{
+    justify-content: space-evenly; 
+    padding: 2% 8% ;
+    width: 12%;
+}
+
+#lokatanam{
+    width: 150px;
+    height: 90px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 576px){
+    #lokatanam{
+        width: 150px;
+        height: 90px;
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+    .pertanian{
+        justify-content: space-evenly; 
+        padding: 4% 8% ;
+        width: 12%;
+    }
+    #kolom{
+        background:rgba(131, 141, 119, 0.575);
+        width: 27%;
+        height: 80%;
+        /* margin: 50px ; */
+        color: white;
+        border-radius: 8% ;
+        margin-left: 20%;
+        margin-top: -0%;
+        border: rgba(43, 48, 43, 0.521) solid 0.4px;
+        box-shadow: 0 0 200px 50px rgba(128, 138, 111, 0.411);
+        justify-content: space-evenly;
+        position: center ;
+
+        
+    }
+}
+
+#kolom{
+    background:rgba(131, 141, 119, 0.575);
+    width: 350px;
+    height: 600px;
+    margin: 50px ;
+    color: white;
+    border-radius: 25px ;
+    margin-left: 37%;
+    margin-top: -0%;
+    border: rgba(43, 48, 43, 0.521) solid 0.4px;
+    box-shadow: 0 0 200px 50px rgba(128, 138, 111, 0.411);
+
+}
+
+#nama{
+    width: 300px;
+    height: 30px;
+    margin-left: 25px;
+    border-radius: 10px;  
+    background-color: #bbc99b;
+    border: 2px solid #bbc99b; 
+    margin-top: 20px;
+
+>>>>>>> 969994df9c219532a337b43ae96f840c12be2277
 }
 
 #email{

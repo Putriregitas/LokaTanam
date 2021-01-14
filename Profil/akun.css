@@ -18,19 +18,18 @@ body{
 
 .inbox{
     width: 40%;
-    padding-bottom: 0% auto ;
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: 28%;
-    padding: 0 auto;
     text-align: center;
     background: rgba(182, 181, 181, 0.568);
     color: black;
     box-sizing: border-box;
     border: 1px solid black;
     border-radius: 15px;
+    padding-bottom: 5%;
 }
 
-.inboxdaftar input{
+.inbox input{
     border: #707070;
     outline:none;
     background-color: #B3BBA0;
@@ -46,7 +45,7 @@ body{
     color: white;
 }
 
-.inboxdaftar button[type="submit"]
+.inbox button[type="button"]
 {
     border: #707070;
     outline: none;
@@ -61,7 +60,7 @@ body{
     color: white;
 }
 
-.inboxdaftar button[type="submit"]:hover
+.inbox button[type="button"]:hover
 {
     cursor: pointer;
     background-color:#6D7659;
@@ -74,6 +73,16 @@ body{
     position:absolute;
     left: 4%;
     top: 2%;
+}
+
+.inbox h2{
+    position: absolute;
+    left: 50%;
+}
+
+.inbox h4{
+    margin-left: 20%;
+    margin-top: -10%;
 }
 
 .eye{
@@ -115,7 +124,7 @@ body{
     .inbox{
         width: 80%;
         margin-left: 10%;
-        margin-bottom: -10%;
+        margin-top: 30%;
     }
 
     .inbox h1 img{
@@ -124,11 +133,24 @@ body{
     }
 
     #namapengguna{
-        margin-top: -5%;
-        width: 90%;}
-
-    .inbox button[type="submit"]{
+        margin-top: 10%;
         width: 90%;
     }
-    
+
+    .inbox button[type="button"]{
+        width: 90%;
+    }
+
+    .inbox h2 img{
+        width: 30%;
+    }
+
+    .inbox h3 img{
+        width: 45%;
+    }
+
+    .inbox h4 img{
+        display: none;
+    }
+
 }
