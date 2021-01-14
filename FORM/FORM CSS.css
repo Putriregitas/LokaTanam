@@ -23,7 +23,7 @@ body{
     padding-bottom: 0% auto ;
     margin-top: 15%;
     margin-left: 28%;
-    padding: 0;
+    padding: 0 auto;
     text-align: center;
     background: rgba(182, 181, 181, 0.568);
     color: black;
@@ -34,12 +34,12 @@ body{
 
 .inboxdaftar input{
     border: #707070;
-    outline: none;
+    outline:none;
     background-color: #B3BBA0;
     width: 217px;
     height: 30px;
     border-radius: 8px;
-    border: 2px solid #707070;
+    border: 1px solid #707070;
     color: white;
 
 }
@@ -48,7 +48,7 @@ body{
     color: white;
 }
 
-.inboxdaftar input[type="submit"]
+.inboxdaftar button[type="submit"]
 {
     border: #707070;
     outline: none;
@@ -60,9 +60,10 @@ body{
     font-size: 15px;
     font-family: 'Segoe UI';
     cursor: pointer;
+    color: white;
 }
 
-.inboxdaftar input[type="submit"]:hover
+.inboxdaftar button[type="submit"]:hover
 {
     cursor: pointer;
     background-color:#6D7659;
@@ -113,6 +114,10 @@ body{
     cursor: pointer;
 }
 
+#hide1{
+    display: none;
+}
+
 .sosmed {
     text-align: center;
     padding-bottom:5% ;
@@ -133,8 +138,42 @@ body{
     background-color:#6D7659;
 }
 
-@media screen and (max-width:"576px"){
-    .inboxdaftar{
-        height: 40%;
-        
+@media screen and (max-width:576px){
+    body{
+        background-size: auto;
     }
+    .inboxdaftar{
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: -10%;
+    }
+
+    .inboxdaftar h1 img{
+        width: 50px;
+        margin-bottom: 40%;
+    }
+
+    #firstname{
+        margin-top: -5%;
+        width: 90%;
+    }
+
+    #lastname{
+        margin-top: 5%;
+        width: 90%;
+    }
+
+    .inboxdaftar button[type="submit"]{
+        width: 90%;
+    }
+
+    .garis{
+        display: none;
+    }
+
+    .eye{
+        margin-top: 2.5%;
+        margin-left: -7%;
+    }
+    
+}
