@@ -1,4 +1,4 @@
-html,body{
+ html,body{
     margin: 0;
     padding: 0;
 }
@@ -57,24 +57,6 @@ section{
     text-align: right;
 }
 
-.filter{
-    position: absolute;
-    text-align: left;
-    cursor: pointer;
-    margin-left: 1010px;
-    margin-top: -24px;
-    background-color: white;
-    border: none;
-    outline-style: none;
-}
-
-.filter:hover{
-    background-color: grey;
-    border: none;
-    cursor: pointer;
-    height: 3%;
-    width: 4%;
-}
 
 .kotak{
     background-image: url(membajak.jpeg);
@@ -146,4 +128,99 @@ section{
 
 .green{
     color: rgb(133, 224, 97);
+}
+
+@media screen and (max-width: 576px){
+    .body nav ul li a{
+        color: grey;
+        padding: 0px 10px;
+        text-align: center;
+        line-height: 40px;
+        height: 40px;
+        font-size: 10px;
+    }
+
+    .body .pertanian img{
+        width: 65px;
+        margin-top: 8px ;
+        position: absolute;
+        cursor: pointer;
+        margin-left: -75px;
+    }
+
+    .gambarcari{
+        margin-left: -122px;
+        margin-top: -23px;
+        position: absolute;
+        cursor: pointer;
+        text-align: right;
+        width: 100%;
+        
+    }
+
+    .tabel{
+        height: 15%;
+        width: 28%;
+        background-color: white;
+        border-radius: 20px;
+        margin-top: 5px;
+        margin-left: 220px;
+    }
+
+
+    .kotak{
+        background-image: url(membajak.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 340px;
+        width: 100%;
+        margin-top: -20px;
+    }
+
+    .tulisan {
+        color: white;
+        font-size: 22px;
+        padding-top: 60px;
+        padding-left: 20px;
+    }
+    
+    .tulisan2{
+        margin-top: -70px;
+        margin-left: 2px;
+    }
+    
+    .tulisan3{
+        color: white;
+        margin-left: 80px;
+        margin-top: 20px;
+    }
+    
+    .tulisan4{
+        margin-top: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .foto{
+        margin-left: -28px;
+        margin-top: -44px;
+        position: absolute;
+        cursor: pointer;
+        text-align: right;
+        width: 28%;
+    }
+
+    .kotak2{
+        height: 3170px;
+        width:  100%;
+        background-color: #516528;
+        margin-top: -16px;
+    }
+
+    .kotak3{
+        width: 80% ;
+        height: 3160px  ;
+        background:rgba(84, 122, 41, 0.651);
+        margin-top: -3422px;
+    }
+
 }
