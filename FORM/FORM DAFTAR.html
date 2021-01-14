@@ -6,10 +6,9 @@
     <title>Form Daftar Akun</title>
     <link rel="stylesheet" href="FORM CSS.css">
     <script src="FORM JS.js"></script>
-    
-</head>
 
-<body>
+</head>
+<body onload="">
     <div class="inboxdaftar">
         <h1> <img src="Logo2.png" alt=""> </h1>
         <h2> <img src="logo.png" alt="" width="50%"></h2>
@@ -17,15 +16,15 @@
             <input type="text" placeholder="Nama Depan" id="firstname">
             <input type="text" placeholder="Nama Belakang" id="lastname">
             <br><br>
-            <input type="text" id="inputan" class="email" placeholder="Email">
+            <input type="text" id="inputan" class="email" placeholder="Email" required="">
             <br><br>
-            <input type="password" id="input" placeholder="Kata Sandi">
+            <input type="password" id="input" placeholder="Kata Sandi" required="">
             <span class="eye" onclick="Functionku()">
                 <i id="hide1" class="fa fa-eye" > <img src="eye.png" alt="" width="20px"> </i>
                 <i id="hide2" class="fa fa-eye-slash"> <img src="eyeslash.png" alt="" width="20px"> </i>
             </span>
             <br><br>
-            <button onclick="validate()" type="submit">Daftar</button>
+            <a href="../LOGIN/PERWEB.html"><input type="submit" value="Daftar" onclick="ValidateForm()">  </input></a>
             <br><br>
             <p>Atau daftar dengan</p>
             <span class="garis"></span>
@@ -38,8 +37,7 @@
             <a href="#"> <img src="twt.png" alt=""></a>
         </div>
         
-    </div>
-
+    </div>    
 
 </body>
 </html>

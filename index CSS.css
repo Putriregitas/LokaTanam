@@ -1,74 +1,10 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
 }
-
-body{
-    overflow-x: hidden;
-}
-
-
-nav{
-    display: flex;
-    background-color: #415310;
-    justify-content: space-around;
-    /* padding: 20px 0; */
-    height: 65px;
-    align-items: center;
-}
-
-nav ul{
-    display: flex;
-    list-style: none;
-    width: 40%;
-    justify-content: space-between;
-    margin-left: 50%;
-}
-
-nav ul li a{
-    color: #e2e2ce;
-    text-decoration: none;
-    font-family:'segoe UI';
-    letter-spacing: 1px;
-    padding: 7px 13px;
-    border-radius: 3px;
-}
-
-a.now, a:hover{
-    background-color:#616F3A ;
-    transition: .5s;
-}
-
-.menu-toggle{
-    display: flex;
-    flex-direction: column;
-    height: 20px;
-    justify-content: space-between;
-    left: 50px;
-    position: relative;
-}
-
-.menu-toggle input{
-    position:absolute;
-    width: 40px;
-    height: 28px;
-    opacity: 0;
-    left: -6px;
-    top: -5px;
-    cursor: pointer;
-}
-
-.menu-toggle span{
-    display: block;
-    width: 28px;
-    height: 3px;
-    background-color: white;
-    border-radius: 3px;
-    margin-top: -5%;
-}
-
 
 #page1{
     background: url("bg.png");
@@ -79,7 +15,7 @@ a.now, a:hover{
 }
 
 
-.logo h1 img{
+.menu h1{
     position:absolute;
     left: 4%;
     top: 2%;
@@ -121,6 +57,32 @@ a.now, a:hover{
 .menu p img{
     width: 2.5%;
 
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li a{
+    float: right;
+    text-decoration: none;
+    color:white;
+    padding: 0px 40px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    margin-top: 1%;
+    font-family: 'montserrat', sans-serif;            
+}
+
+.garis{
+    position: absolute;
+    content: '';
+    width: 87px;
+    height: 2px;
+    background-color: #698238;
+    margin-left: 44%;
+    margin-top: 4%;
 }
 
 #masuk
@@ -167,6 +129,18 @@ a.now, a:hover{
     background-color: rgb(47, 70, 17);
 }
 
+#home{
+    color: #698238;
+}
+
+.menu-toggle{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    margin-top: -5%;
+}
 
 /* halaman kedua */
 #jadwal{
@@ -345,6 +319,15 @@ a.now, a:hover{
     margin: 10px;
 }
 
+#now{
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 8px;
+    height: 8px;
+    margin: 10px;
+    background-color: #67AA52;
+}
 
 .bar:hover{
     background-color: rgb(87, 124, 31);
@@ -421,38 +404,14 @@ a.now, a:hover{
     font-weight: normal;
 }
 
-/* responsive ukuran mobile */
+/* responsive ukuran tablet */
 
 @media screen and (max-width : 576px){
-/* navbar saat responsive */
-    .menu-toggle{
-        display: flex;
+    .nav ul li a{
+        display: none;
+        
     }
 
-    nav{
-        height: 50px;
-    }
-
-    nav ul{
-        position:absolute;
-        right: 0;
-        top: 0;
-        height: 100vh;
-        flex-direction: column;
-        background-color:#3F4243 ;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 90%;
-        z-index: -1;
-        transform: translateX(100%);
-        transition: all 1s;
-    }
-
-    nav ul.slide{
-        transform: translateX(0);
-    }
-
-/* halaman pertama */
     .menu h3{
         font-size: 15px;
         margin-top: 90%;
@@ -478,8 +437,8 @@ a.now, a:hover{
         margin-top: 50%;
     }
 
-    .logo h1 img{
-        width: 30%;
+    .menu h1 img{
+        width: 50%;
     }
 
     .menu h2 img{
@@ -567,43 +526,5 @@ a.now, a:hover{
 /* halaman ketiga */
     .isi3 h1 img{
         width: 55%;
-    }
-
-    .kotak img{
-        width: 60%;
-        margin-left: -20%;
-        margin-top: -5%;
-    }
-
-    .kotak2 img{
-        width: 85%;
-        margin-top: -18%;
-    }
-
-    .button3{
-        margin-top:-230%;
-        margin-left: 32%;
-    }
-
-    .button3 input[type="button"]{
-        width: 80px;
-        height: 15px;
-        font-size: 10%;
-    }
-
-    .buttonlain{
-        margin-top: -15%;
-        margin-left: -130%;
-    }
-
-    .buttonlain input[type="button"]{
-        width: 90px;
-        height: 15px;
-        font-size: 10%;
-    }
-
-    .navv{
-        width: 30%;
-        height: 30%;
     }
 }
